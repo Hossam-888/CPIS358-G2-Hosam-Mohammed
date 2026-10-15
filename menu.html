@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Menu</title>
 </head>
 <body>
 <header>
-    <img src = "images\Burger_King_2020.svg" width="100"/>
+    <img src="images\Burger-King-Logo.png" alt="Burger King Logo" width="100">
 
     <h1>Burger King</h1> </header>
 	<section id="1">
@@ -22,5 +22,44 @@
 
     </section>
 
+<main>
+    <section>  
+       
+       
+       
+        <form action="process_order.php" method="post">
+           
+            
+            <p>Pickup or Delivery</p>
+           
+            <select name="orderType" id="orderType">
+                <option value="pickup">Pickup</option>
+                <option value="delivery">Delivery</option>
+            </select>
+
+           
+           
+            <h2>Menu</h2>
+            <label for="item">Select an item:</label>
+            <select name="item" id="item">
+                <option value="chicken_sandwich">Chicken Sandwich</option>
+                <option value="fries">Fries</option>
+                <option value="soft_drink">Soft Drink</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" min="1" required>
+
+            
+
+           <a href="checkOut.html"> <input type="button" value="Checkout"></a>
+
+        </form>
+    </section>
+
+</main>
+<footer>
+    <p>&copy; 2026 Burger King.</p>
+</footer>
 </body>
 </html>

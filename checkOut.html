@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+<header>
+    <img src="images\Burger-King-Logo.png" alt="Burger King Logo" width="100">
+
+    <h1>Burger King</h1> </header>
+	<section id="1">
+<nav>
+        <ul>
+        <li><a href="home.html"> Home   <img src="images\home.png" alt="Home" width="50"></a></li>
+    <li><a href="menu.html"> Menu <img src="images\fast-food.png" alt="Fast Food" width="50"></a></li>
+    <li><a href="login.html"> Login <img src="images\login.png" alt="Login" width="50"></a></li>
+     <li><a href="aboutUs.html"> Contact Us <img src="images\information-button.png" alt="About Us" width="50"></a></li>
+
+        </ul>
+
+    </section>
+
+<main>
+    <section>
+        <h2>Checkout</h2>
+         
+        <form action="process_checkout.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" required>
+
+            <label for="paymentMethod">Payment Method:</label>
+            <select name="paymentMethod" id="paymentMethod">
+                <option value="cash">Cash</option>
+                <option value="card">Credit Card</option>
+            </select>
+
+            <input type="submit" value="Place Order">
+
+         
+    </section>
+
+</main>
+<footer>
+    <p>&copy; 2026 Burger King.</p>
+</footer>
+</body>
+</html>
