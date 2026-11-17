@@ -1,0 +1,1 @@
+Place these original project image files in this folder: Burger-King-Logo.png, home.png, fast-food.png, login.png, information-button.png. They were referenced in the HTML but were not provided in this upload.

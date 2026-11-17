@@ -123,3 +123,23 @@ footer {
     margin-top: 40px;
 }
 footer a { color: #fff4e6; }
+
+/* Additional responsive layout and form actions for the assignment */
+* { box-sizing: border-box; }
+body { min-height: 100vh; display: flex; flex-direction: column; }
+main { width: 100%; flex: 1; }
+.site-header img { width: 95px; height: auto; }
+nav a[aria-current="page"] { background-color: white; border-color: #d62300; }
+input[type="submit"], input[type="button"] { background-color: #d62300; color: #fff; border: 2px solid #d62300; cursor: pointer; font-weight: bold; margin-top: 16px; }
+input[type="submit"]:hover, input[type="button"]:hover { background-color: #a51e00; }
+.form-actions .button-link { display: inline-block; }
+.offer-table { margin: 14px 0 22px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+@media (max-width: 600px) {
+ header h1 { display: block; margin: 8px 0 0; font-size: 27px; }
+ nav li { margin: 3px; }
+ nav a { padding: 7px; }
+ main { margin: 22px auto; }
+ .card { padding: 17px; }
+ .hero-label { right: 10px; }
+}

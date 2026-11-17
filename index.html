@@ -1,62 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-	<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Burger King</title>
+  <!-- External CSS (shared by every page) -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Internal CSS: demonstrates page-specific embedded styling -->
+  <style>
+    .hero { isolation: isolate; } .hero-label { text-transform: uppercase; }
+  </style>
 </head>
 <body>
-<header>
-    <img src="images\Burger-King-Logo.png" alt="Burger King Logo" width="100">
-
-    <h1>Burger King</h1> </header>
-	<section id="1">
-<nav>
-        <ul>
-        <li><a href="index.html"> Home   <img src="images\home.png" alt="Home" width="50"></a></li>
-    <li><a href="menu.html"> Menu <img src="images\fast-food.png" alt="Fast Food" width="50"></a></li>
-    <li><a href="login.html"> Login <img src="images\login.png" alt="Login" width="50"></a></li>
-     <li><a href="aboutUs.html"> About Us <img src="images\information-button.png" alt="About Us" width="50"></a></li>
-
-        </ul>
-
-    </section>
-
-<main>
-    <section>
-        <article>
-            <h2>Welcome to Burger King!</h2>
-            <p>We are committed to providing you with the best fast food experience. Explore our menu and find your favorite meals.</p>
-      <p><a href="#offers">View Our Special Offers</a></p>
-        </article>
-    </section>
-
-   <section>
-        <article>
-            <h3>Click On logo to view about us page</h3>
-            <img src="images\Burger-King-Logo.png" alt="Burger King Logo" usemap="#siteMap" width="100">
-           <map name="siteMap">
-           <area shape="rect" coords="0,0,100,100" href="aboutUs.html" alt="About Us">
-       </map>
-        </article>
-    </section>
-
-    <section id="offers">
-        
-            <h2>Special Offers</h2>
-            <ul>
-
-                <li>Free Fries with any Combo Meal</li>
-                <li>20% Off on Online Orders - Use code BK20 at checkout</li>
-            </ul>
-
-         
-    </section>
-
-</main>
-<footer>
-    <p>&copy; 2026 Burger King.</p>
-</footer>
+  <header class="site-header" style="border-top: 4px solid #ffb36b;">
+    <h1><img src="images/Burger-King-Logo.png" alt="Burger King Logo" width="95"> Burger King</h1>
+  </header>
+  <nav aria-label="Main navigation"><ul>
+    <li><a href="index.html" aria-current="page" class="current"><img src="images/home.png" alt="" width="22"> Home</a></li>
+<li><a href="menu.html"><img src="images/fast-food.png" alt="" width="22"> Menu</a></li>
+<li><a href="login.html"><img src="images/login.png" alt="" width="22"> Login</a></li>
+<li><a href="signup.html">Sign Up</a></li>
+<li><a href="aboutUs.html"><img src="images/information-button.png" alt="" width="22"> About Us</a></li>
+  </ul></nav>
+  <main>
+  <section class="card hero">
+  <span class="hero-label">Special Offers</span>
+  <article><h2 class="page-title">Welcome to Burger King!</h2>
+  <p>We are committed to providing you with the best fast food experience. Explore our menu and find your favorite meals.</p>
+  <p class="center-text"><a class="button-link" href="#offers" style="letter-spacing: 0.5px;">View Our Special Offers</a></p></article>
+</section>
+<section class="card"><div class="center-text"><p class="small-note">Click the logo to visit About Us:</p><img src="images/Burger-King-Logo.png" alt="Burger King information" usemap="#siteMap" width="100" height="100"><map name="siteMap"><area shape="rect" coords="0,0,100,100" href="aboutUs.html" alt="About Us"></map></div></section>
+<section class="card" id="offers"><h2>Special Offers</h2>
+<ul class="feature-list"><li>Free Fries with any Combo Meal</li><li>20% Off on Online Orders - Use code BK20 at checkout</li></ul>
+<p><a href="menu.html" class="button-link">Browse Menu</a></p></section>
+  </main>
+  <footer><p>&copy; 2026 Burger King.</p></footer>
 </body>
 </html>
