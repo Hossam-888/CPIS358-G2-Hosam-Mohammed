@@ -95,20 +95,19 @@ main { max-width: 960px; margin: 32px auto; padding: 0 18px; }
 table { width: 100%; border-collapse: collapse; background-color: white; }
 th, td { border: 1px solid #c7a184; padding: 12px; text-align: left; }
 th { background-color: #f7d1a9; }
-tr:nth-child(even) { background-color: #fff7ef; }
 .jump-links { text-align: center; margin-bottom: 20px; }
 .jump-links a { display: inline-block; margin: 5px; padding: 7px 11px; }
 
 .form-card { max-width: 540px; margin-left: auto; margin-right: auto; }
 label { display: block; margin-top: 15px; margin-bottom: 6px; font-weight: bold; }
 input, textarea, select {
-    width: 100%;
+    width: 95%;
     padding: 11px;
     border: 1px solid #b89f8d;
     border-radius: 6px;
     background-color: #fffdfb;
     font: inherit;
-    box-sizing: border-box;
+
 }
 input:focus, textarea:focus, select:focus { background-color: #fff1db; }
 textarea { height: 110px; }
@@ -125,7 +124,6 @@ footer {
 footer a { color: #fff4e6; }
 
 /* Additional responsive layout and form actions for the assignment */
-* { box-sizing: border-box; }
 body { min-height: 100vh; display: flex; flex-direction: column; }
 main { width: 100%; flex: 1; }
 .site-header img { width: 95px; height: auto; }
