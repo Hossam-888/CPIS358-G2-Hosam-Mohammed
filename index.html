@@ -26,14 +26,42 @@
   <section class="card hero">
   <span class="hero-label">Special Offers</span>
   <article><h2 class="page-title">Welcome to Burger King!</h2>
+  <p id="greeting" class="center-text"></p>
   <p>We are committed to providing you with the best fast food experience. Explore our menu and find your favorite meals.</p>
   <p class="center-text"><a class="button-link" href="#offers" style="letter-spacing: 0.5px;">View Our Special Offers</a></p></article>
 </section>
 <section class="card"><div class="center-text"><p class="small-note">Click the logo to visit About Us:</p><img src="images/Burger-King-Logo.png" alt="Burger King information" usemap="#siteMap" width="100" height="100"><map name="siteMap"><area shape="rect" coords="0,0,100,100" href="aboutUs.html" alt="About Us"></map></div></section>
+<section class="card">
+  <h2>Why Order Online?</h2>
+  <p>Fast food restaurants are often busy, and customers waste time waiting in long queues just to read the menu or ask about offers. Our website moves the first steps of ordering online, so you can decide what you want before you arrive.</p>
+  <h3>How It Works</h3>
+  <ol>
+    <li>Browse the menu and check the prices.</li>
+    <li>Choose pickup or delivery and select your meal and quantity.</li>
+    <li>Go to checkout and enter your details.</li>
+  </ol>
+  <h3>Benefits</h3>
+  <ul class="feature-list">
+    <li>Save time and skip the queue.</li>
+    <li>See all special offers in one place.</li>
+    <li>Create an account to order faster next time.</li>
+  </ul>
+</section>
 <section class="card" id="offers"><h2>Special Offers</h2>
 <ul class="feature-list"><li>Free Fries with any Combo Meal</li><li>20% Off on Online Orders - Use code BK20 at checkout</li></ul>
 <p><a href="menu.html" class="button-link">Browse Menu</a></p></section>
   </main>
   <footer><p>&copy; 2026 Burger King.</p></footer>
+   <script>
+    var hour = new Date().getHours();
+    var greeting = "Good evening";
+    if (hour < 12) {
+      greeting = "Good morning";
+    } else if (hour < 18) {
+      greeting = "Good afternoon";
+    }
+    document.getElementById("greeting").innerHTML = greeting + "! Ready to order?";
+  </script>
+  <script src="script.js"></script>  
 </body>
 </html>
