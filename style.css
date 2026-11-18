@@ -132,7 +132,6 @@ input[type="submit"], input[type="button"] { background-color: #d62300; color: #
 input[type="submit"]:hover, input[type="button"]:hover { background-color: #a51e00; }
 .form-actions .button-link { display: inline-block; }
 .offer-table { margin: 14px 0 22px; }
-.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
 @media (max-width: 600px) {
  header h1 { display: block; margin: 8px 0 0; font-size: 27px; }
  nav li { margin: 3px; }

@@ -49,10 +49,16 @@
 </section>
 <section class="card" id="offers"><h2>Special Offers</h2>
 <ul class="feature-list"><li>Free Fries with any Combo Meal</li><li>20% Off on Online Orders - Use code BK20 at checkout</li></ul>
+<div class="center-text">
+  <img id="offerPicture" src="images/Burger-King-Logo.png" alt="Burger King logo" width="100">
+  <p id="offerText">Welcome to Burger King! Explore our special offers.</p>
+  <button type="button" onclick="changeOffer()">Change Offer</button>
+</div>
 <p><a href="menu.html" class="button-link">Browse Menu</a></p></section>
   </main>
   <footer><p>&copy; 2026 Burger King.</p></footer>
-   <script>
+  <!-- Embedded script: greets the customer based on the time of day -->
+  <script>
     var hour = new Date().getHours();
     var greeting = "Good evening";
     if (hour < 12) {
@@ -62,6 +68,6 @@
     }
     document.getElementById("greeting").innerHTML = greeting + "! Ready to order?";
   </script>
-  <script src="script.js"></script>  
+  <script src="script.js"></script>
 </body>
 </html>

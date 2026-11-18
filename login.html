@@ -24,11 +24,13 @@
   </ul></nav>
   <main>
   <section class="card form-card"><h2 class="page-title">Login</h2><p class="page-intro center-text">Welcome back!</p>
-<form action="process_login.php" method="post"><label for="username">Username:</label><input type="text" name="username" id="username" autocomplete="username" required>
+<form onsubmit="return validateLogin()" novalidate><label for="username">Username:</label><input type="text" name="username" id="username" autocomplete="username" required>
 <label for="password">Password:</label><input type="password" name="password" id="password" autocomplete="current-password" required>
-<input type="submit" value="Login"></form><p class="center-text">New customer? <a href="signup.html">Sign up here</a>.</p></section>
+<input type="submit" value="Login">
+<p id="loginResult" aria-live="polite"></p></form><p class="center-text">New customer? <a href="signup.html">Sign up here</a>.</p></section>
 <section class="card"><div class="center-text"><p class="small-note">Click the logo to visit About Us:</p><img src="images/Burger-King-Logo.png" alt="Burger King information" usemap="#siteMap" width="100" height="100"><map name="siteMap"><area shape="rect" coords="0,0,100,100" href="aboutUs.html" alt="About Us"></map></div></section>
   </main>
   <footer><p>&copy; 2026 Burger King.</p></footer>
+  <script src="script.js"></script>
 </body>
 </html>

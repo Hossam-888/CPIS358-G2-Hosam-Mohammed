@@ -24,13 +24,15 @@
   </ul></nav>
   <main>
   <section class="card form-card"><h2 class="page-title">Create an Account</h2>
-<form action="process_signup.php" method="post"><label for="name">Full Name:</label><input type="text" name="name" id="name" autocomplete="name" required>
+<form onsubmit="return validateSignup()" novalidate><label for="name">Full Name:</label><input type="text" name="name" id="name" autocomplete="name" required>
 <label for="email">Email:</label><input type="email" name="email" id="email" autocomplete="email" required>
 <label for="password">Password:</label><input type="password" name="password" id="password" minlength="8" autocomplete="new-password" required>
 <label for="confirmPassword">Confirm Password:</label><input type="password" name="confirmPassword" id="confirmPassword" minlength="8" autocomplete="new-password" required>
-<input type="submit" value="Sign Up"></form><p class="center-text">Already registered? <a href="login.html">Login</a>.</p></section>
+<input type="submit" value="Sign Up">
+<p id="signupResult" aria-live="polite"></p></form><p class="center-text">Already registered? <a href="login.html">Login</a>.</p></section>
 <section class="card"><div class="center-text"><p class="small-note">Click the logo to visit About Us:</p><img src="images/Burger-King-Logo.png" alt="Burger King information" usemap="#siteMap" width="100" height="100"><map name="siteMap"><area shape="rect" coords="0,0,100,100" href="aboutUs.html" alt="About Us"></map></div></section>
   </main>
   <footer><p>&copy; 2026 Burger King.</p></footer>
+  <script src="script.js"></script>
 </body>
 </html>
